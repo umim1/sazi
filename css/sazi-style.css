@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+/* 共通部分
+--------------------------------------- */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "sans-serif";
+    line-height: 1.7;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.sentence {
+    font-size: larger;
+}
+
+.sentence-top {
+    padding-top: 2rem;
+}
+
+/* レイアウト
+-------------------------------------- */
+.wrapper {
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* 見出し
+-------------------------------------- */
+.font-english {
+    font-family: "Philosopher", sans-serif;
+    font-weight: normal;
+}
+
+.page-title,
+.heading-large {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.page-title {
+    margin-top: 2rem;
+    line-height: 1.4;
+}
+
+.heading-large {
+    margin-bottom: 1rem;
+}
+
+.h3-title {
+    font-weight: lighter;
+}
+
+/* ボタン
+-------------------------------------- */
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #0090aa;
+}
+
+/* ヘッダー
+-------------------------------------- */
+.page-header {
+    display: flex;
+    flex-direction: column; /* モバイルでは縦並び */
+    align-items: center; /* 中央揃え */
+    padding: .5 1.5rem;
+}
+
+.logo {
+    margin-bottom: 1rem; /* ロゴ下に余白 */
+    width: 500px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row; /* モバイルで縦並び */
+    gap: 5rem;
+    font-size: 1.2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #432;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+/* メインコンテンツ */
+.back {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+
+.about {
+    max-width: 736px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 4rem;
+}
+
+.about p {
+    margin-bottom: 3rem;
+}
+
+/* フッター
+------------------------------------ */
+.info {
+    width: 500px;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+}
+
+.info th,
+.info td {
+    border-bottom: 1px solid #c9c2bc;
+}
+
+.info th {
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+}
+
+.info td {
+    padding: 1rem 0;
+}
+
+.copyright {
+    background-color: #432;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+    color: #fff;
+}
+
+/* 写真 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.picture img {
+    width: auto;
+    height: 40%;
+    max-width: 400px;
+}
+
+.image {
+    padding-top: 2rem;
+}
+
+/* デスクトップ版
+------------------------------------ */
+@media (min-width: 800px) {
+    /* 見出し */
+    .page-title {
+        font-size: 5rem;
+    }
+    .heading-large {
+        font-size: 4rem;
+    }
+    /* ヘッダー */
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+    .main-nav {
+        font-size: 2rem;
+    }
+    /* HOME */
+    .about {
+        margin: 4rem auto 0;
+    }
+    /* フッター */
+    .info th {
+        padding-left: 2.5rem;
+    }
+}
