@@ -99,7 +99,7 @@ img {
 .main-nav {
     display: flex;
     flex-direction: row; /* モバイルで縦並び */
-    gap: 5rem;
+    gap: 2rem;
     font-size: 1.2rem;
     list-style: none;
     align-items: center;
@@ -133,7 +133,7 @@ img {
 /* フッター
 ------------------------------------ */
 .info {
-    width: 500px;
+    width: 100px;
     max-width: 544px;
     margin: auto;
     padding: 0 1.5rem;
