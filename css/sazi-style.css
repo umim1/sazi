@@ -99,8 +99,8 @@ img {
 .main-nav {
     display: flex;
     flex-direction: row; /* モバイルで縦並び */
-    gap: 2rem;
-    font-size: 1.2rem;
+    gap: 2.5rem;
+    font-size: 1.0rem;
     list-style: none;
     align-items: center;
 }
@@ -132,6 +132,11 @@ img {
 
 /* フッター
 ------------------------------------ */
+table {
+    width: 100%; /* テーブル全体を画面幅に合わせる */
+    border-collapse: collapse; /* 枠線をスッキリ */
+}
+
 .info {
     width: 100px;
     max-width: 544px;
